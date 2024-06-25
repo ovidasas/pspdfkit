@@ -10,6 +10,7 @@ async function loadPSPDFKit () {
   return PSPDFKit.load({
     document: '/dist/assets/iks.pdf',
     container: '.pdf-container',
+    useIframe: true,
     initialViewState: new PSPDFKit.ViewState({
       showToolbar: true,
       formDesignMode: true
